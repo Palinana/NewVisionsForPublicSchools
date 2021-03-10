@@ -19,7 +19,7 @@ class App extends Component {
       return a['grade'] - b['grade'];
     });
   
-     // adds name and grade to new to new array
+    // adds name and grade to new to new array
     const groupedByGradeData = students.reduce(function(r, a) {
       r[a.grade] = r[a.grade] || [];
         r[a.grade].push({'name':a.name, 'grade': a.grade});
@@ -29,6 +29,7 @@ class App extends Component {
     // on state saving simplier version, the desired one is printed in Browser's console 
     console.log('groupByGrade: ', groupedByGradeData)
 
+    // saving modified data on state
     this.setState({
       studentsData: students,
       averageToggle: false
@@ -55,6 +56,7 @@ class App extends Component {
     studentsDataWithAverage = this.smallestAverageGrade(studentsDataWithAverage);
     console.log('findLowestAverages: ', studentsDataWithAverage)
 
+    // saving modiifed data on state and toggling the average info
     this.setState({
       studentsData: studentsDataWithAverage,
       averageToggle: true
@@ -75,7 +77,7 @@ class App extends Component {
 
   render() {
     const { initialData, studentsData, averageToggle } = this.state;
-    
+
     return (
       <div className="container"> 
         <div className="table-header">
