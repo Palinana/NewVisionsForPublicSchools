@@ -31,8 +31,8 @@ The function is called when you click By Grade button.
 findLowestAverages() {}
 ```
 - The data comes from src/data/students.json
-- Iterates over the data, finds the average value of all the scores for one student and saves to a new array.
-- Sorts the data in the array, filters to find teh smallest values in a group based by grade
+- Iterates over the data, finds the average value of all the scores for one student, and saves to a new array.
+- Sorts the data in the array, filters to find the smallest values in a group based by grade
 - Updates the array and returns the students with the lowest average scores
 - 
 The function is called when you click By Average button.
