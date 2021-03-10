@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-header {
+  width: 45%;
+  background: #00324B;
+  color: #FFFFFF;
+}
+
+.table-header__items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table-header__item-btns button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: #FFFFFF;
+}
+
+.table-header__btn-grade {
+  background: #35ABD2;
+}
+
+.table-header__btn-avg {
+  background: #D82227;
+}
+
+.students-table {
+  width: 45%;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-collapse: collapse;
+}
+
+.students-table thead tr {
+  background-color: #d4dfe4;
+  color: #003048;
+  text-align: left;
+}
+
+.students-table th,
+.students-table td {
+  padding: 12px 15px;
+}
+
+.students-table thead tr,
+.students-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.students-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.students-table tbody tr:last-of-type {
+  border-bottom: 2px solid #00324B;
+}
